@@ -1,15 +1,24 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap');
+
 .columnsstat  > ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    /* display: grid; */
+    display: flex;
+    align-items: flex-start;
+flex-wrap: nowrap;
+    /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
     /* grid-gap: 16px; */
   }
   
   .columnsstat  > ul > li {
-    border: 1px solid var(--highlight-background-color);
-    background-color: var(--background-color)
+    /* border: 1px solid var(--highlight-background-color); */
+    background-color: var(--background-color);
+    width:30%;
+    text-align: center;
+    background-image: url(https://www.ittdigital.com/themes/custom/ittdigital/images/data-counter-bg.png);
   }
   
   .columnsstat  .columnsstat -card-body {
@@ -29,4 +38,21 @@
     aspect-ratio: 4 / 3;
     object-fit: cover;
   }
-  
+  .section.columnsstat-container {
+    padding: 0;
+}
+main .columnsstat-wrapper {
+  max-width: 100%;
+}
+.columnsstat  > ul > li h3{font-size: 35px; 
+  font-family: Poppins; font-weight: 900;color: var(--background-color);padding-bottom: 0; padding-top:26px;margin-top: 0;margin-bottom: 7px;}
+.cards-card-body {
+  max-width: 172px;
+  margin: auto;
+  font-size: 20px;
+  font-family: 'Poppins';
+  min-height: 80px;
+  color: #1b3c40;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
