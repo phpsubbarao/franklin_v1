@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap');
+.topslider  > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    /* display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 16px; */
+    display: flex;
+ justify-content: center;
+    width: 100%;
+  }
+  .topslider-container *{font-family: poppins;}
+  .topslider  > ul > li {
+    /* border: 1px solid var(--highlight-background-color); */
+    background-color: var(--background-color);
+
+    flex: 0 0 340px;
+
+    box-shadow: 0px 16px 40px #0000001a;
+    padding: 0;
+
+    border-radius: 0;
+    cursor: pointer;
+    margin: 0;
+    flex-direction: column-reverse;
+    display: flex;
+    justify-content: start;
+    max-height: 347px;
+    position: relative;
+  }
+
+  .topslider  .topslider -card-body {
+    margin: 16px;
+  }
+
+  .topslider  .topslider -card-image {
+    line-height: 0;
+  }
+
+  .topslider  .topslider -card-body > *:first-child {
+    margin-top: 0;
+  }
+
+  .topslider  > ul > li img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    height: 347px;
+  }
+  .topslider h2{    font-size: 16px;
+    line-height: 22px;
+    padding-top: 30px;
+    
+    font-family: 'Poppins';
+    margin:0;
+  }
+ 
+
+  
+  .topslider  > ul > li img{  object-fit: cover;}
+  .topslider  > ul > li .cards-card-body {
+    padding: 0;
+    margin: 0;
+  }
+  .topslider > ul > li .cards-card-body{position: absolute; max-width: 100%; color: #fff; bottom:58px;left: 20px;
+    padding-right: 20px;}
+    .topslider > ul > li .cards-card-body h2{font-size: 20px;}
+    .topslider > ul > li .cards-card-body+.cards-card-body{ bottom:0!important;}
+  .topslider > ul > li .cards-card-body+.cards-card-body code{font-size: 16px;}
+  .topslider > ul > li:nth-child(2){    transform: scale(1.3);
+    position: relative;
+    z-index: 999;}
+    .topslider > ul > li:nth-child(2) .cards-card-body{bottom: 107px;}
+    .topslider > ul > li:nth-child(3) .cards-card-body{bottom: 107px;}
+    .topslider > ul > li:nth-child(2) .cards-card-body+.cards-card-body code{font-size: 12px;}
+    .topslider > ul > li:nth-child(2) .cards-card-body+.cards-card-body {bottom:20px!important}
+    .section.topslider-container {
+      padding-bottom: 120px;
+  }
