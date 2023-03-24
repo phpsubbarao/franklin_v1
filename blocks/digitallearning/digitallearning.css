@@ -10,35 +10,36 @@
  justify-content: center;
     width: 100%;
   }
-  
+  .digitallearning-container *{font-family: poppins;}
   .digitallearning  > ul > li {
     /* border: 1px solid var(--highlight-background-color); */
     background-color: var(--background-color);
-   
+
     flex: 0 0 212px;
- 
+
     box-shadow: 0px 16px 40px #0000001a;
     padding: 37px 35px;
 
     border-radius: 25px;
-    cursor: pointer;   
+    cursor: pointer;
     margin: 0 12.5px;
     flex-direction: column-reverse;
     display: flex;
+    justify-content: start;
   }
-  
+
   .digitallearning  .digitallearning -card-body {
     margin: 16px;
   }
-  
+
   .digitallearning  .digitallearning -card-image {
     line-height: 0;
   }
-  
+
   .digitallearning  .digitallearning -card-body > *:first-child {
     margin-top: 0;
   }
-  
+
   .digitallearning  > ul > li img {
     width: 100%;
     aspect-ratio: 4 / 3;
@@ -61,5 +62,12 @@
   }
   .digitallearning  > ul > li:hover{background-color: #0d555d;}
   .digitallearning  > ul > li:hover .cards-card-body{display: none;}
-  .digitallearning  > ul > li:hover .cards-card-body+.cards-card-body{display: block;font-size: 13px;max-width: 100%}
-  .digitallearning  > ul > li:hover .cards-card-body+.cards-card-body code{font-size: 13px; color:#fff; font-family: poppins;;}
+  .digitallearning  > ul > li:hover .cards-card-body+.cards-card-body{display: block;font-size: 11px;max-width: 100%}
+  .digitallearning  > ul > li:hover .cards-card-body+.cards-card-body code{font-size: 11px; color:#fff; font-family: poppins;}
+  .digitallearning-container .default-content-wrapper{text-align: center;}
+  .digitallearning  > ul > li:hover img{max-width: 35px;}
+  .digitallearning-container .default-content-wrapper p{width: auto;
+    display: inline-block;
+    border-left: solid 5px #25e57c;font-size: 30px;
+    line-height: 34px;
+    padding-left: 7px;}
