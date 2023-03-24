@@ -1,11 +1,12 @@
 /* header and nav layout */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap');
 header .nav-wrapper {
   background-color: var(--background-color);
   width: 100%;
-  z-index: 2;
+  z-index: 9999;
   position: fixed;
 }
-
+header * {font-family: poppins;}
 header nav {
   box-sizing: border-box;
   display: grid;
@@ -148,7 +149,7 @@ header .nav-brand {
 }
 
 header nav .nav-brand img {
-  width: 128px;
+  width: 152px;
   height: auto;
 }
 
@@ -228,6 +229,7 @@ header nav .nav-sections ul > li > ul > li {
     gap: 2em;
     margin: 0;
     font-size: var(--body-font-size-xs);
+    justify-content: flex-end;
   }
 
   header nav .nav-sections > ul > li {
