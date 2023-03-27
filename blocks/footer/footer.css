@@ -1,6 +1,9 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap');
+.capabilities-container *{font-family: poppins;}
 footer {
   padding: 2rem;
-  background-color: var(--overlay-background-color);
+  background-color: #fff;
   font-size: var(--body-font-size-s);
 }
 
@@ -11,4 +14,39 @@ footer .footer {
 
 footer .footer p {
   margin: 0;
+  font-size: 14px;
+  color: #707070;
+}
+.gotaproblem> div,.footercontact>div,.footercontact>div ul {
+  display: flex;
+  align-items: baseline;
+  list-style: none;
+}
+.footercontact>div ul li{padding-left: 20px;}
+.footercontact{border-bottom: solid 1px #000;}
+.footercontact>div{justify-content: space-between;}
+h2#contactittdigitalcom {
+  color: #05acbc;
+  font-size: 24px;
+}
+.footercontact>div ul li a{
+  font-size: 14px;
+  color: #707070;
+}
+.gotaproblem> div h2,.gotaproblem> div h3{
+  font-size: 24px;
+  font-weight: 400;
+  color: #343a40;
+}
+.gotaproblem> div h2{
+  font-weight: 900;
+}
+.gotaproblem> div h3{
+  padding-left: 10px;
+}
+.footercontact{
+  margin-bottom: 20px;
+}
+.footercontact h2,.footercontact ul{
+  margin-bottom: 4px;
 }
