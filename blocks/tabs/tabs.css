@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap');
+.tabs  *{font-family: poppins;}
+.tabs-container {
+  background-image: url(https://www.ittdigital.com/themes/custom/ittdigital/images/playground-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color:#fff;
+
+}
+
+
 main .tabs {
   max-width: 100%;
 }
@@ -72,7 +83,7 @@ main .tabs .tabs-content[aria-hidden="true"] {
   main .tabs .tabs-title {
     order: 1;
     margin: 0;
-    border-bottom: 4px solid transparent;
+    border-bottom: 2px solid transparent;
     padding-bottom: 5px;
   }
 
@@ -123,7 +134,9 @@ main .tabs .tabs-content[aria-hidden="true"] {
   }
 
   main .tabs .tabs-title:not(:last-child) {
-    margin-right: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 40px;
   }
 }
 
@@ -664,4 +677,19 @@ main .section > .tabs-wrapper {
 main .section.temp-bg {
     background-color: var(--color-gray-1);
     padding: .1rem 0 3rem;
+}
+.tabs-container h2 {
+  font-size: 20px;
+}
+main .tabs {justify-content: center; text-align: center;}
+main .tabs ul{list-style: none;}
+main .tabs ul picture img{max-width: 197px;}
+h2.tabs-title[aria-selected="true"]   {
+color: #25e57c;
+}
+main .tabs .tabs-content picture img {
+  max-width: 198px;
+}
+main .tabs .tabs-content {
+  max-width: 55%;
 }
