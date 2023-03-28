@@ -1,5 +1,5 @@
 main .carousel-wrapper {
-  padding-bottom: 128px;
+  
   position: relative;
   max-width: unset;
 }
@@ -43,7 +43,7 @@ main .carousel > div {
   flex-shrink: 0;
   scroll-snap-align: start;
   position: relative;
-  height: 50vw;
+  height: auto;
   max-height: 652px;
   align-items: flex-end;
   display: flex;
@@ -67,7 +67,7 @@ main .carousel::-webkit-scrollbar {
 
 main .carousel-wrapper .carousel-buttons {
   text-align: center;
-  margin-top: -48px;
+  margin-top: 8px;
   position: absolute;
   display: flex;
   right: 0;
@@ -513,4 +513,31 @@ main .carousel.style-3 ~ .carousel-controls button.disabled::after {
 
 main .carousel.style-3 ~ .carousel-controls button.prev {
   transform: rotate(180deg);
+}
+main .carousel > div>div, main .carousel > div picture {
+    
+  margin: auto;
+  position: relative;
+}
+main .carousel {
+  max-width: 1200px;
+ margin: auto!important;
+}
+main .carousel picture img{ width: 500px;height: 458px;
+  object-fit: cover;
+    margin-top: 0;
+    padding-top: 0;}
+.videotextinfo-wrapper {
+  position: relative;
+}
+.carousel-text+.carousel-text{
+  display: none;
+}
+main .carousel > div{background-color: #e5e5e5;}
+.carousel-image {
+  margin-right: 60px!important;
+  margin-left: 0!important;
+  margin-bottom: 0;
+  
+  background-color: #000;
 }
