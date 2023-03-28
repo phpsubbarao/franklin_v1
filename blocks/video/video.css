@@ -5,3 +5,31 @@
 .video video {
     width: 100%;
 }
+.video-container.videotextinfo-container {
+    padding: 0;
+    height: 90vh;
+
+}
+.video-container.videotextinfo-container .video-wrapper{
+    max-width: 100%;
+    position: absolute;
+    top:0;
+    overflow: hidden;
+}
+.section{background-color: #fff;}
+.video video {
+    width: 100vw;
+    height: 95vh;
+    object-fit: cover;
+    
+}
+.videotextinfo-wrapper img{
+    padding-top: 60px;
+}
+main .carousel-buttons button {
+    background-color: #000!important    ;
+     margin-top: 30px;
+}
+main .carousel-buttons button.selected{
+    background-color: #25e57c!important;
+}
