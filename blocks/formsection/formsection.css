@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap');
+.formsection  *{font-family: poppins;}
+.formsection-container {
+  background-image: url(https://www.ittdigital.com/themes/custom/ittdigital/images/contact-form-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color:#fff;
+  padding: 0!important;
+}
+.formsection-container ul {
+  list-style: none;
+  margin: 0;
+}
+.formsection-container ul li {display: flex; justify-content: center; align-items: center;}
+.formsection-container .cards-card-body {color: #fff; width: auto; max-width: 100%; padding: 0; margin-left:0; margin-top:0; margin-bottom: 0;}
+.formsection-container .cards-card-image{max-width: 500px;-webkit-animation: mover 2s infinite  alternate;
+  animation: mover 2s infinite  alternate;}
+  .formsection-container .cards-card-body p {margin-bottom: 0; margin-top:0 ;}
+  .formsection-container .cards-card-body p+p strong{    margin-bottom: 20px;
+    display: inline-block;}
+    .formsection-container .cards-card-body p strong{
+      font-size: 34px;
+    }
+@-webkit-keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-50px); }
+}
+@keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-50px); }
+}
