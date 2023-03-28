@@ -7,6 +7,7 @@ function decorateVideoBlock($block, videoURL) {
       <div class="vid-wrapper">
         <video ${attrs} name="media"><source src="${videoURL}" type="video/mp4"></video>
       </div>
+
       `;
   }
 }
@@ -16,6 +17,8 @@ export default function decorate($block) {
   const videoURL = $a.href;
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
+      console.log(entry);
+
       if (entry.isIntersecting) {
         decorateVideoBlock($block, videoURL);
       }
