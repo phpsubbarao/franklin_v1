@@ -109,3 +109,32 @@ main .form .form-submit-wrapper {
   display: flex;
   justify-content: flex-end;
 }
+main .form label {
+  font-size: 14px;
+  font-weight: 500;
+}
+main .form input, main .form textarea, main .form select{
+padding: 7px;
+}
+main .form .form-submit-wrapper {
+display: flex;
+justify-content: center;
+}
+main .form .field-wrapper {
+  margin-bottom: 20px;
+  width: 48%;
+  margin: 1%;
+}
+.form-wrapper form {
+  display: flex;
+  flex-wrap: wrap;
+}
+.form-text-area-wrapper.field-wrapper,.form-submit-wrapper.field-wrapper {
+  width: 100%!important;
+}
+main .form .button {
+  background: rgb(1 230 121);
+  padding: 8px 25px;
+
+  font-size: 16px;
+}
