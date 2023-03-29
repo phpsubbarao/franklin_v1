@@ -19,7 +19,7 @@
 .section{background-color: #fff;}
 .aboutvideo video {
     width: 100vw;
-    height: 95vh;
+    height: 100vh;
     object-fit: cover;
     
 }
@@ -57,6 +57,8 @@ main .carousel-buttons button.selected{
     position: absolute;
     top: 0;
 }
+
+
 @media (min-width: 640px) and (max-width: 1024px){
     .aboutvideotextinfo-wrapper img{
         width: 100%;

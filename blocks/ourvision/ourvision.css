@@ -1,0 +1,3 @@
+.section.ourvision-container .ourvision-wrapper{}
+.section.ourvision-container{transition: all .5s;}
+.section.ourvision-container.vision-color{color: #fff; background-color: #9ecc7a; }

@@ -6,3 +6,13 @@
 .ourvalues-wrapper .ourvalues ul li{display: flex;}
 .ourvalues-wrapper .ourvalues ul {list-style: none;}
 .ourvalues-wrapper .ourvalues ul li >div{display: flex;}
+.ourvalues-wrapper .ourvalues h2{font-size: 20px; margin-bottom: 0;margin-top: 0; text-align: left;}
+.ourvalues-wrapper .ourvalues ul li >div{font-size: 16px;}
+.ourvalues-wrapper table{ vertical-align: top;
+
+}
+.ourvalues-wrapper img{width: 285px;}
+.ourvalues-wrapper table tr:first-child td{ vertical-align: bottom;}
+.ourvalues-wrapper table tr:last-child td{ vertical-align: top;}
+.ourvalues-wrapper .ourvalues ul li >div>p{width: 100%;}
+.ourvalues-wrapper table tr:last-child td h2{font-size: 16px; font-weight: 400;}
