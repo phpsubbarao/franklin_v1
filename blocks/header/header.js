@@ -119,25 +119,26 @@ console.log("Lax Info");
       scrollY: {
         translateX: [
           ["elInY", "elCenterY", "elOutY"],
-          [0, 'screenWidth/4', 'screenWidth'],
+          [0, 'screenWidth/6', 'screenWidth'],
         ]
       }
     })
   // }
 
 // Header Effet
-  // let shrinkHeader = 300;
-  // // eslint-disable-next-line no-undef
-  // $(window).scroll(() => {
-  //   const scroll = getCurrentScroll();
-  //   if (scroll >= shrinkHeader) {
-  //     // eslint-disable-next-line no-undef
-  //     $('.header-wrapper').addClass('fixed-header');
-  //   } else {
-  //     // eslint-disable-next-line no-undef
-  //     $('.header-wrapper').removeClass('fixed-header');
-  //   }
-  // });
+  let shrinkHeader = 300;
+  // eslint-disable-next-line no-undef
+  $(window).scroll(() => {
+    const scroll = getCurrentScroll();
+    console.log(scroll);
+    if (scroll >= shrinkHeader) {
+      // eslint-disable-next-line no-undef
+      $('.header-wrapper').addClass('fixed-header');
+    } else {
+      // eslint-disable-next-line no-undef
+      $('.header-wrapper').removeClass('fixed-header');
+    }
+  });
 // Header Effet End
   // fetch nav content
   const navMeta = getMetadata("nav");

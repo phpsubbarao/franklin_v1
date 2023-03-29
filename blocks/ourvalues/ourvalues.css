@@ -1,0 +1,8 @@
+.ourvalues-container .default-content-wrapper{ max-width: 680px; text-align: center;}
+.ourvalues-container #our-values {font-size: 60px;}
+.ourvalues-container .default-content-wrapper p{font-size: 20px;}
+.ourvalues-wrapper .ourvalues>div{    display: flex;}
+.ourvalues-wrapper .ourvalues>div>div{}
+.ourvalues-wrapper .ourvalues ul li{display: flex;}
+.ourvalues-wrapper .ourvalues ul {list-style: none;}
+.ourvalues-wrapper .ourvalues ul li >div{display: flex;}
