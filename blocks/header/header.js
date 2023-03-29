@@ -105,19 +105,40 @@ function getCurrentScroll() {
  * @param {Element} block The header block element
  */
 export default async function decorate(block) {
-  let shrinkHeader = 300;
-  // eslint-disable-next-line no-undef
-  $(window).scroll(() => {
-    const scroll = getCurrentScroll();
-    if (scroll >= shrinkHeader) {
-      // eslint-disable-next-line no-undef
-      $('.header-wrapper').addClass('fixed-header');
-    } else {
-      // eslint-disable-next-line no-undef
-      $('.header-wrapper').removeClass('fixed-header');
-    }
-  });
 
+  // window.onload = function () {
+    lax.init()
+console.log("Lax Info");
+    // Add a driver that we use to control our animations
+    lax.addDriver('scrollY', function () {
+      return window.scrollY
+    })
+
+    // Add animation bindings to elements
+    lax.addElements('.aboutpicture', {
+      scrollY: {
+        translateX: [
+          ["elInY", "elCenterY", "elOutY"],
+          [0, 'screenWidth/4', 'screenWidth'],
+        ]
+      }
+    })
+  // }
+
+// Header Effet
+  // let shrinkHeader = 300;
+  // // eslint-disable-next-line no-undef
+  // $(window).scroll(() => {
+  //   const scroll = getCurrentScroll();
+  //   if (scroll >= shrinkHeader) {
+  //     // eslint-disable-next-line no-undef
+  //     $('.header-wrapper').addClass('fixed-header');
+  //   } else {
+  //     // eslint-disable-next-line no-undef
+  //     $('.header-wrapper').removeClass('fixed-header');
+  //   }
+  // });
+// Header Effet End
   // fetch nav content
   const navMeta = getMetadata("nav");
   console.log(navMeta);

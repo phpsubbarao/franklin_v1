@@ -12,10 +12,12 @@ import {
   loadBlocks,
   loadCSS,
 } from './lib-franklin.js';
-import ('//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.0/jquery.min.js'); 
-// import ('./ScrollMagic.js'); 
+import ('https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.0/jquery.min.js'); 
+import ('https://cdn.jsdelivr.net/npm/lax.js'); 
+// import ('https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js'); 
 
 
+// import ScrollMagic from "scrollmagic";
 // import('./delayed.js')
 // import React from './react';
 // import { Controller, Scene } from 'react-scrollmagic';
@@ -46,6 +48,7 @@ function buildHeroBlock(main) {
  * @param {Element} main The container element
  */
 function buildAutoBlocks(main) {
+  
   try {
     buildHeroBlock(main);
   } catch (error) {
