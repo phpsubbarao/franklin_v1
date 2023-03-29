@@ -50,3 +50,20 @@ h2#contactittdigitalcom {
 .footercontact h2,.footercontact ul{
   margin-bottom: 4px;
 }
+@media (min-width: 640px) and (max-width: 1024px){
+  .footercontact>div{
+    flex-direction: column;
+  }
+  .footercontact ul,.footercontact>div ul li{padding-left:0 ; padding-right: 10px;}
+}
+
+@media (max-width: 639px){
+  .gotaproblem> div, .footercontact>div, .footercontact>div ul{
+    flex-direction: column;
+    align-items: center;
+  }
+  .footercontact ul,.footercontact>div ul li{padding-left:0 ; }
+  footer .footer p{
+    text-align: center;
+  }
+}

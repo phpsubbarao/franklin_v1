@@ -693,3 +693,21 @@ main .tabs .tabs-content picture img {
 main .tabs .tabs-content {
   max-width: 55%;
 }
+@media (min-width: 640px) and (max-width: 1024px){
+  main .tabs .tabs-title{
+    margin: 10px;
+    
+  }
+  main .tabs .tabs-content{
+    max-width: 100%;
+  }
+
+}
+
+@media (max-width: 639px){
+  main .tabs .tabs-content picture img{
+    max-width: 40%;
+  }
+  main .tabs .tabs-content{max-width: 100%;}
+
+}

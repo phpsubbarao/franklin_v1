@@ -93,3 +93,23 @@
       margin-bottom: 0;
       padding-bottom: 0;
   }
+
+  @media (min-width: 640px) and (max-width: 1024px){
+
+    .capabilities > ul,.digitallearning > ul{    flex-wrap: wrap;}
+    .capabilities > ul > li,.digitallearning > ul>li{flex: 0 0 37%!important;     margin: 4px!important; margin-bottom: 10px!important; padding: 17px!important;}
+    
+
+}
+@media (max-width: 639px){
+    .videotextinfo-wrapper img{
+        width: 100%;
+    }
+    .video video,.video-container.videotextinfo-container{
+        height: 40vh;
+        min-height: auto;
+    }
+    .capabilities > ul,.digitallearning > ul{    flex-wrap: wrap;}
+    .capabilities > ul > li,.digitallearning > ul>li{flex: 0 0 37%!important;     margin: 4px!important; margin-bottom: 10px!important; padding: 17px!important;}
+    
+}

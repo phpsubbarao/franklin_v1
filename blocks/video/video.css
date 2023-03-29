@@ -33,3 +33,25 @@ main .carousel-buttons button {
 main .carousel-buttons button.selected{
     background-color: #25e57c!important;
 }
+.video video,.video-container.videotextinfo-container{
+    min-height: 600px;
+}
+@media (min-width: 640px) and (max-width: 1024px){
+    .videotextinfo-wrapper img{
+        width: 100%;
+    }
+    .video video,.video-container.videotextinfo-container{
+        height: auto;
+        min-height: auto;
+    }
+    
+
+}
+@media (max-width: 639px){
+    .videotextinfo-wrapper img{
+        width: 100%;
+    }
+    .video video,.video-container.videotextinfo-container{
+        height: 40vh;
+    }
+}
