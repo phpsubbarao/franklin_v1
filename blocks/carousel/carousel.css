@@ -589,3 +589,95 @@ main .carousel > div{background-color: #e5e5e5;}
   }
 
 }
+
+
+/* About carousel */
+.aboutvideo-container+.carousel-container{
+  background-color: #048894;
+  position: relative;
+}
+.aboutvideo-container+.carousel-container .carousel > div{
+  background-color: transparent;
+  color:#fff;
+} 
+.aboutvideo-container+.carousel-container h2{color: #fff;    color: rgb(255, 255, 255);
+  margin-bottom: 60px;
+  padding-top: 0;
+  margin-top: 0;}
+  .aboutvideo-container+.carousel-container h2#our-culture{font-size: 60px;}
+.aboutvideo-container+.carousel-container .carousel{
+  border-radius: 0;
+}
+.aboutvideo-container+.carousel-container .carousel-image{
+  background-color: transparent;
+  width: 50%;
+}
+.aboutvideo-container+.carousel-container .carousel-wrapper{position: relative; z-index: 9;}
+.aboutvideo-container+.carousel-container  .carousel picture img{
+  height: 400px;
+  width: 100%;
+}
+.aboutvideo-container+.carousel-container .carousel div.carousel-text{
+  width: 50%;
+}
+.aboutvideo-container+.carousel-container .carousel-wrapper .carousel-buttons {
+  text-align: center;
+  margin-top: 8px;
+  position: absolute;
+  display: flex;
+  right: 0;
+  left: inherit;
+  justify-content: center;
+  transform: rotate(89deg);
+  top: 50%;
+}
+.aboutvideo-container+.carousel-container .carousel-buttons button {
+  background-color: transparent!important;
+  margin-top: 30px;
+  border: solid 1px #fff!important;
+}
+.aboutvideo-container+.carousel-container  .carousel-buttons button.selected{
+  background-color: #fff!important;
+}
+.aboutvideo-container+.carousel-container .carousel-wrapper+.default-content-wrapper {position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 8;
+  width: 35%;
+  height: 145px;
+  background: url(https://www.ittdigital.com/themes/custom/ittdigital/images/curves.png) repeat-x;
+  background-size: contain;
+  animation: 10s wave linear infinite;
+}
+.aboutvideo-container+.carousel-container .carousel-wrapper+.default-content-wrapper::before {
+  content: "";
+  height: 100%;
+  width: 20%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 25%, #048894 75%);
+}
+.aboutvideo-container+.carousel-container  .carousel-wrapper+.default-content-wrapper picture{visibility: hidden;}
+.aboutvideo-container+.carousel-container  .carousel-wrapper+.default-content-wrapper picture img{}
+.aboutvideo-container+.carousel-container .carousel:before {
+  content: "";
+  padding: 7px;
+  width: 400px;
+  height: 75px;
+  background: #0594a2;
+  display: block;
+  position: absolute;
+  z-index: 0;
+  left: 108px;
+  top: -16px;
+}
+@keyframes wave {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 300px 0;
+  }
+}

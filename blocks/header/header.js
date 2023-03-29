@@ -119,7 +119,7 @@ console.log("Lax Info");
       scrollY: {
         translateX: [
           ["elInY", "elCenterY", "elOutY"],
-          [0, 'screenWidth/6', 'screenWidth'],
+          [0, 'screenWidth/4', 'screenWidth'],
         ]
       }
     })
@@ -130,7 +130,6 @@ console.log("Lax Info");
   // eslint-disable-next-line no-undef
   $(window).scroll(() => {
     const scroll = getCurrentScroll();
-    console.log(scroll);
     if (scroll >= shrinkHeader) {
       // eslint-disable-next-line no-undef
       $('.header-wrapper').addClass('fixed-header');
@@ -140,6 +139,24 @@ console.log("Lax Info");
     }
   });
 // Header Effet End
+// vision Effet
+let shrinkvision = 2409;
+
+// eslint-disable-next-line no-undef
+$(window).scroll(() => {
+  const scroll = getCurrentScroll();
+ console.log(scroll);
+
+
+  if (scroll >= shrinkvision) {
+    // eslint-disable-next-line no-undef
+    $('.ourvision-container').addClass('vision-color');
+  } else {
+    // eslint-disable-next-line no-undef
+    $('.ourvision-container').removeClass('vision-color');
+  }
+});
+// vision Effet End
   // fetch nav content
   const navMeta = getMetadata("nav");
   console.log(navMeta);
