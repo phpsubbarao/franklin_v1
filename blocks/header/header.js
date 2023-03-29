@@ -140,7 +140,7 @@ console.log("Lax Info");
   });
 // Header Effet End
 // vision Effet
-let shrinkvision = 2409;
+let shrinkvision = 2609;
 
 // eslint-disable-next-line no-undef
 $(window).scroll(() => {
