@@ -1,0 +1,78 @@
+.aboutvideo {
+    margin: 32px 0;
+}
+
+.aboutvideo video {
+    width: 100%;
+}
+.aboutvideo-container.aboutvideotextinfo-container {
+    padding: 0;
+    height: 90vh;
+
+}
+.aboutvideo-container.aboutvideotextinfo-container .aboutvideo-wrapper{
+    max-width: 100%;
+    position: absolute;
+    top:0;
+    overflow: hidden;
+}
+.section{background-color: #fff;}
+.aboutvideo video {
+    width: 100vw;
+    height: 95vh;
+    object-fit: cover;
+    
+}
+.aboutvideotextinfo-wrapper img{
+    padding-top: 60px;
+}
+main .carousel-buttons button {
+    background-color: #000!important    ;
+     margin-top: 30px;
+}
+main .carousel-buttons button.selected{
+    background-color: #25e57c!important;
+}
+.aboutvideo video,.aboutvideo-container.aboutvideotextinfo-container{
+    min-height: 600px;
+}
+.aboutvideotextinfo-wrapper {
+    position: relative;
+}
+.aboutvideotextinfo.block{
+    padding-top: 80px;
+    max-width: 944px;
+    position: absolute;
+ color:#fff;
+    left: 50%;
+    top: 50%;
+}
+.aboutpicture-wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.aboutpicture-wrapper picture img{max-width: 70%;}
+.aboutvideotextinfo.block picture {
+    position: absolute;
+    top: 0;
+}
+@media (min-width: 640px) and (max-width: 1024px){
+    .aboutvideotextinfo-wrapper img{
+        width: 100%;
+    }
+    .aboutvideo video,.aboutvideo-container.aboutvideotextinfo-container{
+        height: auto;
+        min-height: auto;
+    }
+    
+
+}
+@media (max-width: 639px){
+    .aboutvideotextinfo-wrapper img{
+        width: 100%;
+    }
+    .aboutvideo video,.aboutvideo-container.aboutvideotextinfo-container{
+        height: 40vh;
+    }
+}

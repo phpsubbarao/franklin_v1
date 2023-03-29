@@ -12,6 +12,16 @@ import {
   loadBlocks,
   loadCSS,
 } from './lib-franklin.js';
+import ('//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.0/jquery.min.js'); 
+// import ('./ScrollMagic.js'); 
+
+
+// import('./delayed.js')
+// import React from './react';
+// import { Controller, Scene } from 'react-scrollmagic';
+
+
+// import {ScrollMagic} from './ScrollMagic.js'
 
 const LCP_BLOCKS = []; // add your LCP blocks to the list
 window.hlx.RUM_GENERATION = 'project-1'; // add your RUM generation information here
@@ -124,6 +134,21 @@ function loadDelayed() {
 async function loadPage() {
   await loadEager(document);
   await loadLazy(document);
+  // $(function(){
+  //   var shrinkHeader = 300;
+  //    $(window).scroll(function() {
+  //      var scroll = getCurrentScroll();
+  //        if ( scroll >= shrinkHeader ) {
+  //             $('.header').addClass('shrink');
+  //          }
+  //          else {
+  //              $('.header').removeClass('shrink');
+  //          }
+  //    });
+  //  function getCurrentScroll() {
+  //      return window.pageYOffset;
+  //      }
+  //  });
   loadDelayed();
 }
 
