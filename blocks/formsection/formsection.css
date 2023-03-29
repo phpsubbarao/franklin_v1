@@ -11,16 +11,39 @@
   list-style: none;
   margin: 0;
 }
-.formsection-container ul li {display: flex; justify-content: center; align-items: center;}
-.formsection-container .cards-card-body {color: #fff; width: auto; max-width: 100%; padding: 0; margin-left:0; margin-top:0; margin-bottom: 0;}
+.formsection-container ul li {display: flex; justify-content: center; align-items: center;flex-direction: column;
+  max-width: 90%;}
+  .form.block {
+    width: 600px;
+    background: #1a3c40;
+    padding: 20px;
+    border-radius: 6px;
+}
+.formsection-container .cards-card-body {color: #fff; text-align: center; width: auto; max-width: 100%; padding: 0; margin-left:0; margin-top:0; margin-bottom: 0;}
 .formsection-container .cards-card-image{max-width: 500px;-webkit-animation: mover 2s infinite  alternate;
   animation: mover 2s infinite  alternate;}
-  .formsection-container .cards-card-body p {margin-bottom: 0; margin-top:0 ;}
+  .formsection-container .cards-card-body p {margin-bottom: 0; margin-top:0 ; font-size: 18px;}
   .formsection-container .cards-card-body p+p strong{    margin-bottom: 20px;
     display: inline-block;}
     .formsection-container .cards-card-body p strong{
-      font-size: 34px;
+      font-size: 28px;
     }
+    .section.formsection-container.form-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .section.formsection-container.form-container>div {
+      max-width: 600px;
+      margin: 10px;
+  }
+.formsection.block .cards-card-body:last-child{
+  display: none;
+}
+.formsection-container .cards-card-body p:first-child{
+ margin: 20px;
+}
+
 @-webkit-keyframes mover {
   0% { transform: translateY(0); }
   100% { transform: translateY(-50px); }
@@ -28,4 +51,23 @@
 @keyframes mover {
   0% { transform: translateY(0); }
   100% { transform: translateY(-50px); }
+}
+@media (min-width: 640px) and (max-width: 1024px){
+  .section.formsection-container.form-container{
+    flex-direction: column;
+  }
+  .form.block{
+    width: 90%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 639px){
+  .section.formsection-container.form-container{
+    flex-direction: column;
+  }
+  .form.block{
+    width: 90%;
+    margin-bottom: 20px;
+  }
 }
