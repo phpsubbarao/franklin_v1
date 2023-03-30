@@ -1,18 +1,60 @@
 .ourvalues-container .default-content-wrapper{ max-width: 680px; text-align: center;}
-.ourvalues-container #our-values {font-size: 60px;}
-.ourvalues-container .default-content-wrapper p{font-size: 20px;}
+.ourvalues-container #our-values {font-size: 60px; font-weight: 900; padding-bottom: 30px;
+    line-height: 114px;}
+.ourvalues-container .default-content-wrapper p{font-size: 20px; text-align: center;
+    margin: 0 auto;
+    line-height: 26.4px;
+    font-family: "Poppins";
+    color: #000000;
+    font-weight: 600;}
 .ourvalues-wrapper .ourvalues>div{    display: flex;}
 .ourvalues-wrapper .ourvalues>div>div{}
 .ourvalues-wrapper .ourvalues ul li{display: flex;}
 .ourvalues-wrapper .ourvalues ul {list-style: none;}
 .ourvalues-wrapper .ourvalues ul li >div{display: flex;}
-.ourvalues-wrapper .ourvalues h2{font-size: 20px; margin-bottom: 0;margin-top: 0; text-align: left;}
-.ourvalues-wrapper .ourvalues ul li >div{font-size: 16px;}
+.ourvalues-wrapper .ourvalues h2{font-size: 20px; margin-top: 0; text-align: left; font-weight: bold; margin-bottom: 5px; line-height: 28.8px; color: #2f2e41; font-family: "Gordita", sans-serif;}
+.ourvalues-wrapper .ourvalues ul li >div{font-size: 16px; flex: 0 0 50%;
+    max-width: 50%;}
 .ourvalues-wrapper table{ vertical-align: top;
 
 }
-.ourvalues-wrapper img{width: 285px;}
-.ourvalues-wrapper table tr:first-child td{ vertical-align: bottom;}
-.ourvalues-wrapper table tr:last-child td{ vertical-align: top;}
-.ourvalues-wrapper .ourvalues ul li >div>p{width: 100%;}
-.ourvalues-wrapper table tr:last-child td h2{font-size: 16px; font-weight: 400;}
+/* .ourvalues-wrapper img{width: 285px;} */
+/* .ourvalues-wrapper table tr:first-child td{ vertical-align: bottom;} */
+.ourvalues-wrapper table tr:last-child td{ vertical-align: top; font-family: Poppins;
+    font-weight: 600;
+    max-width: 230px;
+    color: #2f2e41;
+    line-height: 26.4px;}
+/* .ourvalues-wrapper .ourvalues ul li >div>p{width: 100%;} */
+.ourvalues-wrapper table tr:last-child td h2{font-size: 16px; font-family: Poppins;
+    font-weight: 600;
+    max-width: 230px;
+    color: #2f2e41;
+    line-height: 26.4px;}
+    .ourvalues ul li:nth-child(1) .cards-card-body:nth-child(2){
+        padding-top: 40px;
+    }
+    .ourvalues ul li .cards-card-body table{
+        padding: 80px 15px;
+    }
+    #integrity {
+        margin-top: -13px;
+    }
+    .ourvalues-wrapper .ourvalues ul li:nth-child(3) {
+        align-items: center;
+        justify-content: center;
+    }
+    .ourvalues-wrapper .ourvalues ul li:nth-child(3) table h1 {
+        margin: 0;
+        font-size: 20px;
+    text-align: left;
+    font-weight: bold;
+    line-height: 28.8px;
+    color: #2f2e41;
+    font-family: "Gordita", sans-serif;
+    }
+    .ourvalues-wrapper .ourvalues ul li:nth-child(3) table tr{
+        padding: 0;
+        margin: 0;
+    }
+    
