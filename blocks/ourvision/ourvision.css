@@ -1,3 +1,129 @@
-.section.ourvision-container .ourvision-wrapper{}
+.section.ourvision-container .ourvision-wrapper, .section.ourvision-container .default-content-wrapper{
+	    max-width: 85%;
+}
 .section.ourvision-container{transition: all .5s;}
 .section.ourvision-container.vision-color{color: #fff; background-color: #9ecc7a; }
+
+.section.ourvision-container {
+    background: transparent;
+    padding: 100px 200px 200px !important;
+    position: relative;
+    color: #000;
+    transition: all 0.7s;
+    padding-left: 0!important;
+    padding-right: 0!important;
+}
+.section.ourvision-container.vision-color::before {
+    opacity: 1;
+}
+.section.ourvision-container::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #9ecc7a;
+    z-index: -1;
+    transition: all 0.8s;
+    opacity: 0;
+    pointer-events: none;
+}
+.section.ourvision-container::after {
+	content: "";
+    position: absolute;
+    bottom: 170px;
+    left: 0px;
+    width: 35%;
+    height: 145px;
+    background: url(https://www.ittdigital.com/themes/custom/ittdigital/images/curves.png) repeat-x;
+    background-size: contain;
+    animation: 10s wave linear infinite;
+    z-index: -1;
+}
+.section.ourvision-container .ourvision-wrapper .ourvision.block ul{
+	list-style: none;
+}
+
+.section.ourvision-container .ourvision-wrapper .ourvision.block ul li{
+	display: flex;
+}
+.section.ourvision-container .ourvision-wrapper .ourvision.block ul li .cards-card-body{
+	    padding: 45px 0px 0px 50px;
+}
+#our-vision{
+	text-align: center;
+}
+.section.ourvision-container .ourvision-wrapper .ourvision.block ul li .cards-card-image{
+	    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+        margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+.section.ourvision-container .ourvision-wrapper .ourvision.block ul li .cards-card-image picture {
+    overflow: hidden;
+    position: absolute;
+    top: 30px;
+    box-shadow: 0px 10px 24px #00000029;
+    width: 100%;
+    height: auto;
+}
+.section.ourvision-container .ourvision-wrapper .ourvision.block ul li .cards-card-image picture img {
+    transition: 1s;
+    object-fit: cover;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.section.ourvision-container .ourvision-wrapper .ourvision.block ul li .cards-card-image picture img:hover {
+    transform: scale(1.3);
+}
+.section.ourvision-container .ourvision-wrapper .ourvision.block ul li .cards-card-image::before {
+    width: 80%;
+    height: 95px;
+    position: absolute;
+    background: #aed88c;
+    left: -25px;
+    content: "";
+}
+h2#our-vision{
+    margin-bottom: 36px;
+    line-height: 114px;
+        font-size: 80px;
+    letter-spacing: 0px;
+    font-weight: 900;
+    font-family: "Poppins";
+}
+.section.ourvision-container .ourvision-wrapper .ourvision.block ul li .cards-card-body p{
+	    padding: 10px 0px;
+    font-family: "Poppins";
+    font-weight: 600;
+    line-height: 26.4px;
+    font-size: 14px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    padding-top: 0;
+}
+#creating-memorable--impactful-experiences{
+	font-weight: 600;
+	max-width: 675px;
+	padding: 0px 0px 10px;
+	margin-top: 0;
+	margin-bottom: 10px;
+	line-height: 76px;
+	font-size: 80px;
+	letter-spacing: 0px;
+	font-family: "Poppins";
+}
