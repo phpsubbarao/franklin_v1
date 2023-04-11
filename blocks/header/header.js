@@ -108,7 +108,7 @@ export default async function decorate(block) {
 
   // window.onload = function () {
     lax.init()
-console.log("Lax Info");
+//console.log("Lax Info");
     // Add a driver that we use to control our animations
     lax.addDriver('scrollY', function () {
       return window.scrollY
@@ -140,12 +140,12 @@ console.log("Lax Info");
   });
 // Header Effet End
 // vision Effet
-let shrinkvision = 2609;
+let shrinkvision = 2409;
 
 // eslint-disable-next-line no-undef
 $(window).scroll(() => {
   const scroll = getCurrentScroll();
- console.log(scroll);
+//  console.log(scroll);
 
 
   if (scroll >= shrinkvision) {
@@ -159,9 +159,9 @@ $(window).scroll(() => {
 // vision Effet End
   // fetch nav content
   const navMeta = getMetadata("nav");
-  console.log(navMeta);
+  // console.log(navMeta);
   const navPath = navMeta ? new URL(navMeta).pathname : "/nav";
-  console.log(navPath);
+  // console.log(navPath);
   const resp = await fetch(`${navPath}.plain.html`);
 
   if (resp.ok) {

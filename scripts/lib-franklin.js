@@ -4,7 +4,7 @@
  * you may not use this file except in compliance with the License. You may obtain a copy
  * of the License at http://www.apache.org/licenses/LICENSE-2.0
  *
- * Unless required by applicable law or agreed to in writing, software distributed under
+//  * Unless required by applicable law or agreed to in writing, software distributed under
  * the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTATIONS
  * OF ANY KIND, either express or implied. See the License for the specific language
  * governing permissions and limitations under the License.
@@ -15,6 +15,26 @@
  * @param {string} checkpoint identifies the checkpoint in funnel
  * @param {Object} data additional data for RUM sample
  */
+// import  GoogleOAuthProvider  from '@react-oauth/google'; 
+//React.Component
+//  import { React } from './@react';
+// import { WPContentPager, FSHandler, CSV } from '@adobe/helix-importer';
+// import { ... } from '@adobe/helix-importer';
+
+async function main() {
+  const pager = new WPContentPager({
+    nbMaxPages: 1000,
+    url: 'url to a WordPress site'
+  });
+
+  const entries = await pager.explore();
+
+  const csv = CSV.toCSV(entries);
+
+  const handler = new FSHandler('output', console);
+  await handler.put('explorer_results.csv', csv);
+}
+
 export function sampleRUM(checkpoint, data = {}) {
   sampleRUM.defer = sampleRUM.defer || [];
   const defer = (fnname) => {
@@ -415,6 +435,9 @@ export async function loadBlock(block) {
     block.dataset.blockStatus = 'loaded';
   }
 }
+// function login(){
+//   alert('Hello Login');
+// }
 
 /**
  * Loads JS and CSS for all blocks in a container element.
@@ -545,7 +568,11 @@ export function decorateButtons(element) {
   });
 }
 
-/**
+export async function login() {
+alert('Hello Ram');
+}
+  /**
+ * 
  * Load LCP block and/or wait for LCP in default content.
  */
 export async function waitForLCP(lcpBlocks) {
